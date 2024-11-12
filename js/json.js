@@ -47,7 +47,7 @@ function populateHeader(jsonObj) {
     header.append(headerH1);
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
-function showTopFlavors() {
+function showTopFlavors(jsonObj) {
     // STEP 10c: Attache the JSON topFlavors object to a variable
     let topFlavors = jsonObj.topFlavors;
     console.log(topFlavors);
