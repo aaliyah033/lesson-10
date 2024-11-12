@@ -61,8 +61,8 @@ function showTopFlavors(jsonObj) {
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]['name'];
-        image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
-        image.setAttribute('src','./images/' + topFlavors[i].image);
+        //image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
+         image.setAttribute('src','./images/' + topFlavors[i].image);
         let ingredients = topFlavors[i].ingredients;
         // STEP 10g: Build a loop for the ingredients array in the JSON
         for(let j=0;j<ingredients.length;j++){
@@ -85,6 +85,7 @@ function showTopFlavors(jsonObj) {
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
 
 // STEP 12: Change the URL in STEP 3 to point to the JSON file in the local /js folder in order to prepare for today's lab
+
 
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 

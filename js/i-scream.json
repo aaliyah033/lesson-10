@@ -25,6 +25,33 @@
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    
+    {
+      "name" : "Matcha blast",
+      "calories" : 50,
+      "type" : "frozen yogurt",
+      "ingredients" : [
+        "Matcha",
+        "greek yogurt",
+        "mayple syrup",
+        "penut butter"
+      ],
+      "image" : "ice-cream-xtra1.svg"
+    },
+    {
+      "name" : "Tiramisu",
+      "calories" : 240,
+      "type" : "Gelato",
+      "ingredients" : [
+        "coffe",
+        "whipping cream",
+        "dark chocolate ",
+        "tapioca starch",
+        "lady fingers"
+
+      ],
+      "image" : "ice-cream-xtra2.svg"
     }
   ]
 }
