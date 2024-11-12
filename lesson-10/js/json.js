@@ -54,10 +54,13 @@ function showTopFlavors() {
     // STEP 10d: Loop through the topFlavors object
     for (let i = 0; i < topFlavors.length; i ++) {
         // STEP 10e: build HTML elements for the content
-        
-        
+        let article = document.createElement('article');
+        let h2 = document.createElement('h2');
+        let image = document.createElement('img');
+        let ul = document.createElement('ul');
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
+        h2.textContent = topFlavors[i]['name'];
         
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
