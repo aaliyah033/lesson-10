@@ -8,8 +8,8 @@ async function populate() {
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
-    const requestURL = "https://aaliyah033.github.io/lesson-10/js/i-scream.json"; //this is the url from github of the i-scream.json
-    
+   // const requestURL = "https://aaliyah033.github.io/lesson-10/js/i-scream.json"; //this is the url from github of the i-scream.json
+   const requestURL = "https://nibraskhalid.github.io/COMP1073Week10/js/i-scream.json";
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL); 
     
@@ -61,7 +61,8 @@ function showTopFlavors(jsonObj) {
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]['name'];
-        image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
+        image.setAttribute('src', 'https://nibraskhalid.github.io/COMP1073Week10/images/'+ topFlavors[i].image);
+        //image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
          //image.setAttribute('src','./images/' + topFlavors[i].image);
         let ingredients = topFlavors[i].ingredients;
         // STEP 10g: Build a loop for the ingredients array in the JSON
