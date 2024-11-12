@@ -14,11 +14,13 @@ async function populate() {
     const request = new Request(requestURL); 
     
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
-    
-    
+    const response = await fetch(request); //awaits just waits for fetch comnad to send the reponse before wiaiting
+
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
+    const iScream = await response.json(); //await for the reponse in json format 
     
     // STEP 8: Output the iScream JSON object to the console 
+    console.log(iScream); //this will print the json object to the console
     
     // STEP 9a: Invoke the populateHeader function here, then build it below
     
