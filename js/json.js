@@ -10,10 +10,11 @@ async function populate() {
     // STEP 4: Store the URL of a JSON file in a variable */
 
     //My URL
-    const requestURL = "https://aaliyah033.github.io/lesson-10/js/i-scream.json"; //this is the url from github of the i-scream.json
+    //const requestURL = "https://aaliyah033.github.io/lesson-10/js/i-scream.json"; //this is the url from github of the i-scream.json
 
     //Nibras URL added 
-    // const requestURL = "https://nibraskhalid.github.io/COMP1073Week10/js/i-scream.json";
+    const requestURL = "https://nibraskhalid.github.io/COMP1073Week10/js/i-scream.json";
+    
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL); 
     
@@ -71,10 +72,10 @@ function showTopFlavors(jsonObj) {
         h2.textContent = topFlavors[i]['name'];
 
         //NIBRAS URL
-        //  image.setAttribute('src', 'https://nibraskhalid.github.io/COMP1073Week10/images/'+ topFlavors[i].image);
+        image.setAttribute('src', 'https://nibraskhalid.github.io/COMP1073Week10/images/'+ topFlavors[i].image);
 
          //MY URLS
-        image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
+        //image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
 
          //image.setAttribute('src','./images/' + topFlavors[i].image);
         let ingredients = topFlavors[i].ingredients;
