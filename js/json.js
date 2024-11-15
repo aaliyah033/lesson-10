@@ -79,42 +79,45 @@ function showTopFlavors(jsonObj) {
         
         // for lab 4: Add the calories and type to the list 
         //notes: using switch and if so it targets both 2.
-        //add color so it shows, --- because its already wrotten in JSON no need to wrote again
-        const caloriesColor = 'red';
-        const typeColor = 'pink';
-        switch(topFlavors[i]){
+        //add color so it shows,(no need it now works/shows) --- because its already wrotten in JSON no need to wrote again
+        
+        switch(topFlavors[i].type){
             case 'ice cream':
-               if(topFlavors[i] === 400){
-                caloriesListed.style.color = caloriesColor;
-                typeListed.style.color = typeColor;
+               if(topFlavors[i].calories === 400){
+                    console.log(topFlavors[i]);
                 }
                 break;
             case 'sorbet':
-                if(topFlavors[i] === 350){
-                    caloriesListed.style.color = caloriesColor;
-                    typeListed.style.color = typeColor;
+                if(topFlavors[i].calories === 350){
+                    console.log(topFlavors[i]);
                 }
                 break;
             case 'frozen-yogurt':
-                if(topFlavors[i] === 50){
-                    caloriesListed.style.color = caloriesColor;
-                    typeListed.style.color = typeColor;
+                if(topFlavors[i].calories === 50){
+                    console.log(topFlavors[i]);
                 }
                 break;
             case 'Gelato':
-                if(topFlavors[i] === 240){
-                    caloriesListed.style.color = caloriesColor;
-                    typeListed.style.color = typeColor;
+                if(topFlavors[i].calories === 240){
+                    console.log(topFlavors[i]);
                 }
                 break;       
-
+                
         }
+            // Lab 4: to display the information
+            caloriesListed.textContent=`Calories: ${topFlavors[i].calories}`;
+            typeListed.textContent=`Type: ${topFlavors[i].type}`;
+            //Lab 4: added append for the type and calories
+                ul.append(typeListed);
+                ul.append(caloriesListed);
 
        
+
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         article.appendChild(h2);
         article.appendChild(image);
-        article.appendChild(ul);
+        article.appendChild(ul); //this will also target the append of type and calories
+        
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         section.appendChild(article);
     };
