@@ -10,10 +10,10 @@ async function populate() {
     // STEP 4: Store the URL of a JSON file in a variable */
 
     //My URL
-    //const requestURL = "https://aaliyah033.github.io/lesson-10/js/i-scream.json"; //this is the url from github of the i-scream.json
+    const requestURL = "https://aaliyah033.github.io/lesson-10/js/i-scream.json"; //this is the url from github of the i-scream.json
 
     //Nibras URL added 
-    const requestURL = "https://nibraskhalid.github.io/COMP1073Week10/js/i-scream.json";
+    // const requestURL = "https://nibraskhalid.github.io/COMP1073Week10/js/i-scream.json";
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL); 
     
@@ -71,10 +71,10 @@ function showTopFlavors(jsonObj) {
         h2.textContent = topFlavors[i]['name'];
 
         //NIBRAS URL
-         image.setAttribute('src', 'https://nibraskhalid.github.io/COMP1073Week10/images/'+ topFlavors[i].image);
+        //  image.setAttribute('src', 'https://nibraskhalid.github.io/COMP1073Week10/images/'+ topFlavors[i].image);
 
          //MY URLS
-        //image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
+        image.setAttribute('src', 'https://aaliyah033.github.io/lesson-10/images/'+ topFlavors[i].image);
 
          //image.setAttribute('src','./images/' + topFlavors[i].image);
         let ingredients = topFlavors[i].ingredients;
@@ -89,26 +89,31 @@ function showTopFlavors(jsonObj) {
         // for lab 4: Add the calories and type to the list 
         //notes: using switch and if so it targets both 2.
         //add color so it shows,(no need it now works/shows) --- because its already wrotten in JSON no need to wrote again
-        
+        const caloriesColor = 'red';
         switch(topFlavors[i].type){
-            case 'ice cream':
+            case 'ice-cream':
                if(topFlavors[i].calories === 400){
                     console.log(topFlavors[i]);
+                    caloriesListed.style.color = caloriesColor;
+                    caloriesListed.style.color = caloriesColor;
                 }
                 break;
             case 'sorbet':
                 if(topFlavors[i].calories === 350){
                     console.log(topFlavors[i]);
+                    caloriesListed.style.color = caloriesColor;
                 }
                 break;
             case 'frozen-yogurt':
                 if(topFlavors[i].calories === 50){
                     console.log(topFlavors[i]);
+                    caloriesListed.style.color = caloriesColor;
                 }
                 break;
             case 'Gelato':
                 if(topFlavors[i].calories === 240){
                     console.log(topFlavors[i]);
+                    caloriesListed.style.color = caloriesColor;
                 }
                 break;       
                 
