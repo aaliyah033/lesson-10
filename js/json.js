@@ -60,8 +60,8 @@ function showTopFlavors(jsonObj) {
         let ul = document.createElement('ul');
 
         //For lab 4: adding elements to get the calories annd the type 
-        let calories = document.createElement('li');
-        let type = document.createElement('li');
+        let caloriesListed = document.createElement('li');
+        let typeListed = document.createElement('li');
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]['name'];
@@ -76,7 +76,40 @@ function showTopFlavors(jsonObj) {
             // add the ingredient to the UL
             ul.appendChild(listItem);
         }
-           
+        
+        // for lab 4: Add the calories and type to the list 
+        //notes: using switch and if so it targets both 2.
+        //add color so it shows, --- because its already wrotten in JSON no need to wrote again
+        const caloriesColor = 'red';
+        const typeColor = 'pink';
+        switch(topFlavors[i]){
+            case 'ice cream':
+               if(topFlavors[i] === 400){
+                caloriesListed.style.color = caloriesColor;
+                typeListed.style.color = typeColor;
+                }
+                break;
+            case 'sorbet':
+                if(topFlavors[i] === 350){
+                    caloriesListed.style.color = caloriesColor;
+                    typeListed.style.color = typeColor;
+                }
+                break;
+            case 'frozen-yogurt':
+                if(topFlavors[i] === 50){
+                    caloriesListed.style.color = caloriesColor;
+                    typeListed.style.color = typeColor;
+                }
+                break;
+            case 'Gelato':
+                if(topFlavors[i] === 240){
+                    caloriesListed.style.color = caloriesColor;
+                    typeListed.style.color = typeColor;
+                }
+                break;       
+
+        }
+
        
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         article.appendChild(h2);

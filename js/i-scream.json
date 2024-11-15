@@ -7,7 +7,7 @@
     {
       "name" : "Monstrous Mint",
       "calories" : 400,
-      "type" : "ice cream",
+      "type" : "ice-cream",
       "ingredients" : [
         "peppermint cream",
         "dark chocolate chips",
@@ -30,7 +30,7 @@
     {
       "name" : "Matcha blast",
       "calories" : 50,
-      "type" : "frozen yogurt",
+      "type" : "frozen-yogurt",
       "ingredients" : [
         "Matcha",
         "greek yogurt",
